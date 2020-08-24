@@ -76,6 +76,6 @@ def reset(nice,mean,name):
     start(nice,mean,name)
             
 
-    if __name__ == "__main__":
-        start()            
+if __name__ == "__main__":
+    start()            
         

@@ -94,15 +94,15 @@ def again(nice,mean,name) :
         else:
             print("n\Enter ( Y ) for 'YES', ( N ) for 'NO':\n>>>")
 
-        def reset(nice, mean,name) :
-            nice = 0 #reseting the variables for the beginning of a new game
-            mean = 0
+def reset(nice, mean,name) :
+    nice = 0 #reseting the variables for the beginning of a new game
+    mean = 0
             #notice, i don't resent the name variable as that same user is still playing
-            start(nice,mean,name)
+    start(nice,mean,name)
     
 
 
 
 
-    if __name__ == "__main__":
-        start()
+if __name__ == "__main__":
+    start()
