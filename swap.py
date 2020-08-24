@@ -1,0 +1,2 @@
+Name = "Erik"
+Name.swapcase()
