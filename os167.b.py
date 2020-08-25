@@ -14,6 +14,3 @@ for file in dirs:
         whoo = os.path.join(path, file)
         print(whoo+ " " + fun_time)
 
-
-#modification_time = os.path.getmtime(path)
-#local_time = time.ctime(modification_time)
