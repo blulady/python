@@ -1,0 +1,9 @@
+import os, sys, time
+
+path = "C:\python_projects"
+dirs = os.listdir( path )
+
+for file in dirs:
+    print(file)
+    if file == "\*.txt":
+        print(file)

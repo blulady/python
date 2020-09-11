@@ -15,3 +15,6 @@ fPath = 'C:\python_projects\\'  #file path, don't forget to escape the escapes (
 
 abPath = os.path.join(fPath, fName)
 print(abPath)
+
+
+
