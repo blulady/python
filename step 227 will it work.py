@@ -14,7 +14,7 @@ class ParentWindow(Frame):
         self.closeButton = Button(self.master,text='close',width=5,height=2)
         self.closeButton.grid(row=1,column=0,padx=(27,0),pady=(10,0),sticky=E+W)
 
-If __name__ == "__main__":
-    root = tk.TK()
+if __name__ == "__main__":
+    root = tk.Tk()
     App = ParentWindow(root)
     root.mainloop()

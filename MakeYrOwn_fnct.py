@@ -16,17 +16,22 @@ def ask_quit(self):
 
 def submit(self):
    var_submission =  self.txt_subform.get().title()
-   page_txt.config(text = '<html>\
-                <body>\
-                        <h1>\
-                            {}\
-                        </h1>\
-                </body>\
-    </html>' .format(var_submission)
+   page_txt = '<html>\
+                                <body>\
+                                        <h1>\
+                                                {}\
+                                        </h1>\
+                                </body>\
+                    </html>' .format(var_submission)
    
-    f = open("file:///C:/Users/Sarah/AppData/Local/Programs/Python/Python38-32/MakeYrOwn.html","w")
+    f = open("MakeYrOwn.html","w")
+    f.write(page_txt)
+    f.close
 
-   """f.write("\
+url = 'file:"file:///Python/Python38-32/MakeYrOwn.html'
+webbrowser.open_new_tab(url)
+
+"""f.write("\
     <html>\
                 <body>\
                         <h1>\
