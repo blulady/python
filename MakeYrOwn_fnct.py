@@ -28,7 +28,7 @@ def submit(self):
     f.write(page_txt)
     f.close
 
-url = 'file:"file:///Python/Python38-32/MakeYrOwn.html'
+url = 'file:///Python/Python38-32/MakeYrOwn.html'
 webbrowser.open_new_tab(url)
 
 """f.write("\
