@@ -15,6 +15,6 @@ class apples(Fruit):
         print("You have {} apples".format(amount))
 
 obj = apples()
-obj.numbers("80 boxes")
+obj.FruitQuantities("60 boxes")
 obj.numbers("80 boxes")
 
