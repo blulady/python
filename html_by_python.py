@@ -3,7 +3,7 @@
 import webbrowser
 
 
-
+#https://www.w3schools.com/python/python_file_write.asp
 
 
 f = open("htmlbypython.html", "w")

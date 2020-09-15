@@ -1,3 +1,6 @@
+#https://www.youtube.com/watch?v=Aim_7fC-inw&t=301s
+#http://effbot.org/tkinterbook/tkinter-dialog-windows.htm
+
 from tkinter import *
 import tkinter as tk
 import dialog
@@ -11,7 +14,8 @@ class Maybe(Frame):
         self.master.geometry('{}x{}'.format(700,400))
 
         self.master.title('Try This?')
-        self.master.simpledialog.askfloat()
+
+        path_work = filedialg
 
         
 

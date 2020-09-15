@@ -1,3 +1,6 @@
+#we have imported tkinter and it's classes, webbrowser so that the webbrowser will open on the
+#users screen. we have also connected to the other files containing scripts
+
 from tkinter import *
 import tkinter as tk
 from tkinter import messagebox
@@ -26,3 +29,5 @@ def load_gui(self): #in this function that the main file calls, we use the tkint
 
     if __name__ == "__main__":
         pass
+    #we use this line to control our code flow, python will come here first and execute
+    #whtat is underneath, in this case it is a pass because the main file is the only one we want executing

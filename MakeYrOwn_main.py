@@ -3,7 +3,7 @@ import tkinter as tk
 import webbrowser
 import MakeYrOwn_fnct
 import MakeYrOwn_gui
-#here we have imported all the modules/widget we need to make this script work (maybe?)
+#here we have imported all the modules/widget we need to make this script work
 #we have imported tkinter and it's classes, webbrowser so that the webbrowser will open on the
 #users screen. we have also connected to the other files containing scripts
 

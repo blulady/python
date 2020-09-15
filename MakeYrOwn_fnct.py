@@ -1,3 +1,6 @@
+#here we have imported all the modules/widget we need to make this script work
+#we have imported tkinter and it's classes, webbrowser so that the webbrowser will open on the
+#users screen. we have also connected to the other files containing scripts
 import webbrowser
 import os
 from tkinter import *
@@ -7,6 +10,8 @@ from tkinter import filedialog
 
 import MakeYrOwn_main
 import MakeYrOwn_gui
+
+
 
 def ask_quit(self):
     if messagebox.askokcancel("Exit Program","Are We Done Now?"):
@@ -22,27 +27,15 @@ def submit(self):
                                                 {}\
                                         </h1>\
                                 </body>\
-                    </html>' .format(var_submission)
+                    </html>'.format(var_submission)
+   var_direct = self.txt_wbdrct.get()
+   f = open("MakeYrOwn.html","w")
+   f.write(page_txt)
+   f.close
+   url = '{}/MakeYrOwn.html'.format(var_direct)
+   webbrowser.open_new_tab(url)
    
-    f = open("MakeYrOwn.html","w")
-    f.write(page_txt)
-    f.close
-
-url = 'file:///Python/Python38-32/MakeYrOwn.html'
-webbrowser.open_new_tab(url)
-
-"""f.write("\
-    <html>\
-                <body>\
-                        <h1>\
-                            {}\
-                        </h1>\
-                </body>\
-    </html>".format(var_submission)
-    f.close()
-           f = open("MakeYrOwn.html","r")
-           url = 'file:///C:/Users/Sarah/AppData/Local/Programs/Python/Python38-32/MakeYrOwn.html'
-           webbrowser.open_new_tab(url)"""
+   
 
 
 if __name__ == "__main__":
