@@ -1,8 +1,10 @@
 import shutil
 import os
 import pytz
+import time
 import datetime
 from datetime import datetime
+from pathlib import Path
 
 pacific = pytz.timezone('America/Los_Angeles')
 local_date = pacific.localize(datetime.now())
@@ -17,6 +19,12 @@ destination = '/Users/Sarah/Desktop/folderb/'
 files = os.listdir(source)
 
 
-if 8 <= Portland:
+
+
+if 24 <= Portland:
     for i in files:
         shutil.move(source+i, destination)
+
+
+#p = path("app.py)
+        

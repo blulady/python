@@ -36,7 +36,9 @@ def submit(self):
    webbrowser.open_new_tab(url)
    
    
-
+#   with open(file_path, 'w' as f:
+#             f.write(page_txt)
+#(begin the process to create the file in a designated folder)
 
 if __name__ == "__main__":
     pass

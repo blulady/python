@@ -1,0 +1,15 @@
+import shutil
+import os
+import pytz
+import time
+import datetime
+from datetime import datetime
+from pathlib import Path
+
+source = '/Users/Sarah/Desktop/foldera/'
+
+destination = '/Users/Sarah/Desktop/folderb/'
+files = os.listdir(source)
+
+for i in files:
+    print datetime.datetime.fromtimestamp(i.stat().st_mtime
