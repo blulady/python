@@ -3,27 +3,29 @@ import os
 import pytz
 import time
 import datetime
-from datetime import datetime
 from pathlib import Path
+from datetime import timedelta
 
-source = '/Users/Sarah/Desktop/foldera/'
+source = r'C:/Users/Sarah/Desktop/foldera/'
+#this needs r before it for shutil to work
+destination = r'C:/Users/Sarah/Desktop/folderb/'
+files = os.listdir(source)
 
-destination = '/Users/Sarah/Desktop/folderb/'
-files = os.listdir(destination)
 
-p = Path("app.py")
-#p.stat()
-#p.stat().st_mtime
-p2 = datetime.fromtimestamp(p.stat().st_mtime) 
-print(p2)
-#for i in files:
- #   print(i)
-#for i in files:
-    
-p3 = os.stat(p).st_mtime #this is the one we want
-print(datetime.fromtimestamp(p3))
 
 for i in files:
-    os.stat(i).st_mtime
-    print(datetime.fromtimestamp(i))
-    
+    absolute = os.path.join(source, i)
+    #here we join the path to the file name
+    modtime = os.path.getmtime(absolute)
+    #here we get the time that the file was last modified
+    hours_24 = datetime.datetime.now() - timedelta(hours = 24)
+    #gets the time representation of 24 hours ago
+    time_file = datetime.datetime.fromtimestamp(modtime)
+    #here we get the time representation of when the file was last modified
+    if hours_24 < time_file:
+        #if representation of 24 hours is less than the representation of the file's time of modification
+        shutil.copy(source+i, destination)
+        #copies the files from the source to the destination
+        print(time_file,i)
+
+
