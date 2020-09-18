@@ -29,3 +29,5 @@ for i in files:
         print(time_file,i)
 
 
+if __name__ == "__main__":
+    pass
