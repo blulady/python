@@ -7,7 +7,7 @@ import backup1_gui
 #we have imported tkinter and it's classes, webbrowser so that the webbrowser will open on the
 #users screen. we have also connected to the other files containing scripts
 
-class MakeYrOwn(Frame):
+class backup1(Frame):
     #here we create the funtion and pull in the parent class from tkinter
     def __init__(self,master,*args,**kwargs):
         #when it sees init it does the operation immediately below,
@@ -35,5 +35,5 @@ if __name__ == "__main__":
     #we use this line to control our code flow, python will come here first and execute
     #whtat is underneath
     root = tk.Tk() #we have instantiated tiknter and have neamed it root
-    App = MakeYrOwn(root) #here we pass it to app
+    App = backup1(root) #here we pass it to app
     root.mainloop() #keeps the window open

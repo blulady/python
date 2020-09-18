@@ -14,18 +14,18 @@ import backup1_fnct
 def load_gui(self): #in this function that the main file calls, we use the tkinter methods  (label, grid and entry) to place/paint objects on the window
     self.btn_browse1 = tk.Button(self.master,width=12,text="Browse",command=lambda:backup1_fnct.directory(self))
     self.btn_browse1.grid(row=1,column=0,columnspan=2,padx=(10,10),pady=(10,0),sticky=W)
-    self.btn_browse2 = tk.Button(self.master,width=12,text="Browse",command=lambda:backup1_fnct.directory(self))
+    self.btn_browse2 = tk.Button(self.master,width=12,text="Browse",command=lambda:backup1_fnct.directory2(self))
     self.btn_browse2.grid(row=3,column=0,padx=(10,10),pady=(10,0),sticky=W)
     
-    self.btn_submit = tk.Button(self.master,width=12,height=2,text='Close Program',command=lambda:backup1_fnct.ask_quit(self))
-    self.btn_submit.grid(row=5,column=3,padx=(0,0),pady=(45,0),sticky=E)
+    self.btn_quit = tk.Button(self.master,width=12,height=2,text='Close Program',command=lambda:backup1_fnct.ask_quit(self))
+    self.btn_quit.grid(row=5,column=3,padx=(0,0),pady=(45,0),sticky=E)
     self.btn_submit = tk.Button(self.master,width=12,height=2,text='Check Files',command=lambda:backup1_fnct.submit(self))
     self.btn_submit.grid(row=5,column=0,padx=(0,0),pady=(45,0),sticky=E)
 
-    self.txt_subform = tk.Entry(self.master,text='',width=20,font=('Veranda',15))
-    self.txt_subform.grid(row=1,column=1,columnspan=3,padx=(10,10),pady=(20,10),sticky=W+E+S)
-    self.txt_wbdrct = tk.Entry(self.master,text='',width=20,font=('Veranda',15))
-    self.txt_wbdrct.grid(row=3,column=1,columnspan=3,padx=(10,10),pady=(20,10),sticky=W+E+S)
+    self.txt_subform = tk.Entry(self.master,text='',width=30,font=('Veranda',15))
+    self.txt_subform.grid(row=1,column=1,columnspan=4,padx=(10,10),pady=(20,10),sticky=W+E+S)
+    self.txt_wbdrct = tk.Entry(self.master,text='',width=30,font=('Veranda',15))
+    self.txt_wbdrct.grid(row=3,column=1,columnspan=4,padx=(10,10),pady=(20,10),sticky=W+E+S)
 
 
 if __name__ == "__main__":

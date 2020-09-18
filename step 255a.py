@@ -25,7 +25,7 @@ for i in files:
     if hours_24 < time_file:
         #if representation of 24 hours is less than the representation of the file's time of modification
         shutil.copy(source+i, destination)
-        #copies the files from the source to the destination
+        #copies the files from the sourc
         print(time_file,i)
 
 

@@ -2,10 +2,10 @@ import shutil
 import os
 
 
-source = r'C:/Users/Sarah/Desktop/foldera/'
+source = 'C:/Users/Sarah/Desktop/foldera/'
 
 #set the destination path to folder b
-destination = r'C:/Users/Sarah/Desktop/folderb/'
+destination = 'C:/Users/Sarah/Desktop/folderb/'
 files = os.listdir(source)
 
 for i in files:
